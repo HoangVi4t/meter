@@ -10,8 +10,8 @@ const Layout = ({ meta, children, ...props }) => {
     <div className="max-w-screen min-h-screen lg:flex">
       <Meta {...meta} />
       <Sidebar />
-      <div className="mx-auto flex w-[100%] max-w-screen-xl flex-col">
-        <main className="flex-1 px-2 py-2 md:px-6" {...props}>
+      <div className="mx-auto flex w-[100%] ">
+        <main className="flex-1" {...props}>
           {children}
         </main>
         {router.pathname === '/' && <Footer />}
